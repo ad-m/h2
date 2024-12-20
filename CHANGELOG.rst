@@ -1,6 +1,30 @@
 Release History
 ===============
 
+dev
+---
+
+**API Changes (Backward Incompatible)**
+
+- Support for Python 3.6 has been removed.
+- Support for Python 3.7 has been removed.
+- Support for Python 3.8 has been removed.
+- Remove mistakenly set `max_inbound_frame_size` attribute on `H2Stream`.
+
+**API Changes (Backward Compatible)**
+
+- Support for Python 3.11 has been added.
+- Support for Python 3.12 has been added.
+- Support for Python 3.13 has been added.
+- Add an ability to send outbound cookies separately to improve headers compression.
+- Updated packaging and testing infrastructure.
+
+**Bugfixes**
+
+- Fix repr() checks for Python 3.11
+- Fix asyncio / wsgi examples.
+- Clarify docs on using curl with http2.
+
 4.1.0 (2021-10-05)
 ------------------
 
